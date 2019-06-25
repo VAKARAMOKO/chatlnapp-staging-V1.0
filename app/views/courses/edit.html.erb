@@ -1,0 +1,16 @@
+<div class="section">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-8">
+				<span class="subtitle">Modifier le cours</span>
+				<p>
+					<%= render "form", course: @course %>
+				</p>
+
+				<p>
+					<%= link_to 'Afficher', @course %> |<%= link_to 'Retour', courses_path %>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

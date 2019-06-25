@@ -1,0 +1,31 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+/*import police: google font*/
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,600&display=swap');
+
+
+ /* import section  */
+@import "bootstrap";
+@import "font-awesome";
+
+@import "bulma";
+
+
+/*import compoments*/
+@import url(compoments/variables.scss);
+@import url(compoments/polices.scss);
+@import url(compoments/_meta_courses.scss);
+@import url(compoments/forms.scss);
+/*@import url(compoments/avatar.scss);*/
+/*@import url(compoments/button.scss);*/
+/*@import url(compoments/dropdawn.scss);*/
+/*@import url(compoments/card.scss);*/
+/*@import url(compoments/list.scss);*/
+/*@import url(compoments/banner.scss);*/
+
+
+
+
+

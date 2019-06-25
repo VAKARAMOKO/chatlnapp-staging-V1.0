@@ -1,0 +1,60 @@
+<div class="section forms">
+  <div class="container">
+    <div class="columns is-mobile">
+      <div class="column is-10 forms">
+
+    <%= simple_form_for(@course) do |f| %>
+      <%= f.error_notification %>
+      <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+          <div class="field">
+            <div class="control field-input">
+              <%= f.input :title, required: false, input_html: { class: "input" }, wrapper: false, label_html: { class: "string" },class:"active", placeholder: "Donnez un titre simple a comprendre", label:"Titre du cours:" %>
+            </div>
+          </div>     
+
+        <div class="field">
+            <div class="control field-input">
+             <%= f.input :description, required: false, input_html: { class: "textarea" }, wrapper: false, label_html: { class: "string" }, label:'Description:' %>             
+            </div>
+        </div>
+        <div class="field">
+          <div class="control field-input">
+           <%= f.input :corps, required: false, input_html: { class: "textarea" }, wrapper: false, label_html: { class: "string" }, label: 'Contenu:' %>             
+          </div>
+        </div>
+        <div class="columns">
+          <div class="field column is-6">
+            <div class="control">
+              <label class="label">Niveau :</label>
+              <div class="control has-icons-left">
+                <span class="select">
+                  <%= f.input_field :level_course, collection: Course::NIVEAUX, prompt: "Classe :", label:"Niveau du cours:" %>
+                </span>
+                <span class="icon is-small is-left">
+                  <i class="fa fa-briefcase"></i>
+                </span>
+              </div>
+            </div>
+          </div>   
+
+          <div class="field column is-6">
+            <div class="control">
+              <label class="label">Matière:</label>
+              <div class="control has-icons-left">
+                <span class="select">
+                  <%= f.input_field :material, collection: Course::MATIERES, prompt: "Matière:", label:"Selectionn:" %>
+                </span>
+                <span class="icon is-small is-left">
+                  <i class="fa fa-briefcase"></i>
+                </span>
+              </div>
+            </div>
+          </div>   
+        </div>
+        <%= f.button :submit," Soumettre" ,class: "button is-info is-medium is-rounded" %>
+      <% end %>
+    </div>
+    </div>
+  </div>
+</div>
