@@ -64,7 +64,7 @@ gem 'friendly_id', '~> 5.2', '>= 5.2.5'
 #
 #MEMBERSHIP
 # #membership
-gem 'devise', '~> 4.6', '>= 4.6.2'
+gem 'devise', '~> 4.7'
 #membership invitable
 #gem 'devise_invitable', '~> 2.0', '>= 2.0.1'# bundle: yet; installation: not yet
 #select country
