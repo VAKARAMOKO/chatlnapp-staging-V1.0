@@ -52,7 +52,7 @@ gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 # editor
 gem 'summernote-rails', '~> 0.8.10.0'
 #loading content
-gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'kaminari', '~> 1.2'
 #vote
 #gem 'acts_as_votable', '~> 0.12.0'#no implement
 #vue
